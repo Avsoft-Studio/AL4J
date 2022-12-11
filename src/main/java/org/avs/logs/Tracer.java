@@ -20,19 +20,15 @@ public class Tracer implements ITrace<Couple<ILogLevel, CharSequence>>, AutoClos
 		this.size = 0;
 	}
 	
-	@Override
 	public int size() { return size; }
 
-	@Override
 	public boolean isEmpty() { return size == 0; }
 	
-	@Override
 	public void close() throws Exception {
 		this.removeTrace();
 		this.traces = null;
 	}
 	
-	@Override
 	public void removeTrace() {
 		synchronized(this) {
 			final Couple<ILogLevel, CharSequence>[] tab = this.traces;
@@ -42,25 +38,21 @@ public class Tracer implements ITrace<Couple<ILogLevel, CharSequence>>, AutoClos
 		}	
 	}
 
-	@Override
 	public boolean addTrace(Couple<ILogLevel, CharSequence> trace) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
 	public String traceToString() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public Couple<ILogLevel, CharSequence> getTrace(int i) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
 	public List<Couple<ILogLevel, CharSequence>> getTraces(Predicate<? super Couple<ILogLevel, CharSequence>> predicate) {
 		// TODO Auto-generated method stub
 		return null;

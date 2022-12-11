@@ -6,25 +6,25 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import avsoft.age.fr.back.Initializer;
-import avsoft.back.sounds.playformats.extendsounds.PlayOgg;
+//import avsoft.age.fr.back.Initializer;
+//import avsoft.back.sounds.playformats.extendsounds.PlayOgg;
 
-import avsoft.back.sounds.playformats.*;
+//import avsoft.back.sounds.playformats.*;
 
 public class MainSound {
 	public static void main(String[] args) throws Exception {
 		
 		/*******PLAYSOUND FOR BASE FILE (WAV AU AIFF)********/
-		Initializer.initialize();
+		//Initializer.initialize();
 		//PlaySoundBase psb = new PlaySoundBase("C:\\Users\\IM2AG\\Downloads\\test.wav"); //String en parametre
-		PlaySoundBase psb = new PlaySoundBase(new File("C:\\Users\\IM2AG\\Downloads\\test.wav")); //File en parametre
+		//PlaySoundBase psb = new PlaySoundBase(new File("C:\\Users\\IM2AG\\Downloads\\test.wav")); //File en parametre
 		System.out.println("Play()");
-		psb.play();
+		//psb.play();
 		//TEST FONCTION CHANGESOUND
 		try { Thread.sleep(10000); } catch (Exception e) {};
-		System.out.println("changeSound()");
-		psb.changeSound("C:\\Users\\IM2AG\\Downloads\\test2.wav");
-		psb.play();
+		//System.out.println("changeSound()");
+		//psb.changeSound("C:\\Users\\IM2AG\\Downloads\\test2.wav");
+		//psb.play();
 		try { Thread.sleep(10000); } catch (Exception e) {};
 		//TEST FONCTION PAUSE ET RESUME
 		/*try { Thread.sleep(10000); } catch (Exception e) {};
